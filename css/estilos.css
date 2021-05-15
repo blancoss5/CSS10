@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.menu{
+    list-style:none;
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    background-color: #333;
+}
+
+.enlaces{
+    position: relative;
+}
+
+.link{
+    color: #dddddd;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    /*arriba derecha abajo izquierda*/
+    font-size: 25px;
+    width: 100%;
+}
+
+.enlaces:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.submenu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+.enlaces:hover > .submenu{
+    display: block;
+}
+
+.submenu .submenu{
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
